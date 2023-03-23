@@ -11,8 +11,8 @@ dataframe$Score = rowSds(as.matrix(dataframe[,c(2,3)]))
 dataframe
 
 mydata <- edit(dataframe)
-colSums((is.na(mydata)))
-
+data<-colSums((is.na(mydata$)))
+data
 which(is.na(mydata$interest_rate))
 
 remove<-na.omit(mydata)
